@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
+import { HTTP } from '@ionic-native/http/ngx';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [HTTP]
 })
 export class HomePageModule {}
